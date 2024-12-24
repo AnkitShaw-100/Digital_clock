@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock</title>
-    <link rel="stylesheet" href="index.css">    
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
     <div id="container">
-        <div class="text" id="time-left">Time left in this year is</div>
+        <div class="text">Time left in this year is</div>
         <div id="clock">
-            <span class="text" id="month">  00 : </span>
-            <span class="text" id="day">  00 : </span>
-            <span class="text" id="hour">  00 : </span>
-            <span class="text" id="min">  00 : </span>
-            <span class="text" id="sec">  00 : </span>
-            <span class="text" id="millisec">  000</span>
+            <div class="unit">
+                <span class="value" id="month">00</span>
+                <span class="label">Months</span>
+            </div>
+            <div class="unit">
+                <span class="value" id="day">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="unit">
+                <span class="value" id="hour">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="unit">
+                <span class="value" id="min">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="unit">
+                <span class="value" id="sec">00</span>
+                <span class="label">Seconds</span>
+            </div>
+            <div class="unit">
+                <span class="value" id="millisec">000</span>
+                <span class="label">Milliseconds</span>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>

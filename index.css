@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     display: grid;
@@ -7,13 +7,16 @@ body{
     background-color: rgb(180, 180, 180);
 }
 
-.text{
+.text {
     font-size: 40px;
     font-family: cursive;
+    text-align: center;
 }
-#container{
+
+#container {
     background-color: rgb(203, 203, 203);
-    width: 50vw;
+    width: 90%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,9 +24,79 @@ body{
     padding: 20px;
     border-radius: 20px;
     border: 4px dashed rgb(160, 158, 158);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-#clock{
+
+#clock {
     display: flex;
-    gap: 30px;
-    margin:30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px;
+}
+
+.unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.unit span.value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.unit span.label {
+    padding-right: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 32px;
+    }
+
+    #container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #clock {
+        gap: 15px;
+    }
+
+    .unit span.value {
+        font-size: 32px;
+    }
+
+    .unit span.label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 28px;
+    }
+
+    #container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #clock {
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .unit span.value {
+        font-size: 28px;
+    }
+
+    .unit span.label {
+        font-size: 10px;
+    }
 }
