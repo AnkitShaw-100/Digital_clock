@@ -9,7 +9,7 @@ setInterval(() => {
     let currentTime = new Date();
     
     // Target date (January 1, 2025)
-    let targetDate = new Date('January 1, 2025 00:00:00');
+    let targetDate = new Date('January 1, 2026 00:00:00');
 
     // Calculate the difference in milliseconds
     let diff = targetDate - currentTime;
